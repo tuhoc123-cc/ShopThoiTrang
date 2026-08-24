@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <base href="../">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
@@ -15,7 +16,6 @@
         href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,300,600,700,800'
         rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/product-slider.css" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -56,12 +56,12 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li class="active"><a href="single.html">Single</a></li>
-                        <li><a href="cart.html">Thanh Toán</a></li>
-                        <li><a href="checkout.html">Thông Tin</a></li>
-                        <li><a href="about.html">About us</a></li>
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li class="active"><a href="pages/shop.html">Shop</a></li>
+                        <li><a href="pages/single.html">Đơn Hàng</a></li>
+                        <li><a href="pages/cart.html">Cart</a></li>
+                        <li><a href="pages/checkout.html">Checkout</a></li>
+                        <li><a href="pages/about.html">About us</a></li>
                         <!-- <li class="dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown</a>
                 <ul class="dropdown-menu">
@@ -71,7 +71,7 @@
                     <li><a href="#">Dropdown</a></li>
                 </ul>
                 </li> -->
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -96,144 +96,141 @@
         </div>
     </div>
     <!-- shop-page -->
-    <div class="container content">
-        <div class="row">
-            <div class="col-md-9 white-bg">
-                <!-- Single Product -->
-                <div class="single-product cold-md-12">
-                    <div class="flexslider col-md-6">
-                        <ul class="slides">
-                            <li
-                                data-thumb="https://bizweb.dktcdn.net/100/415/697/products/hong-7aa59018-4948-47ec-9353-404165f624a2.jpg?v=1715048844013">
-                                <img src="https://bizweb.dktcdn.net/100/415/697/products/hong-7aa59018-4948-47ec-9353-404165f624a2.jpg?v=1715048844013"
-                                    alt="" style="width: 370px; height: 233px; object-fit: cover;" />
-                            </li>
-                            <li
-                                data-thumb="https://bumshop.com.vn/wp-content/uploads/2022/09/hoodie-tron-den-trum-dau.jpg">
-                                <img src="https://bumshop.com.vn/wp-content/uploads/2022/09/hoodie-tron-den-trum-dau.jpg"
-                                    alt="" style="width: 370px; height: 233px; object-fit: cover;" />
-                            </li>
-                            <li
-                                data-thumb="https://bizweb.dktcdn.net/100/454/935/products/mat-truoc-ao-hoodie-form-rong-mau-kem-c2e31eca-8c40-46af-a0b3-8f844bdde7e1.jpg?v=1669796046287">
-                                <img src="https://bizweb.dktcdn.net/100/454/935/products/mat-truoc-ao-hoodie-form-rong-mau-kem-c2e31eca-8c40-46af-a0b3-8f844bdde7e1.jpg?v=1669796046287"
-                                    alt="" style="width: 370px; height: 233px; object-fit: cover;" />
-                            </li>
-                            <li data-thumb="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIdiwh0FFjut281i_IagExXrc1f28pmRbI7g&s"
-                                style="width: 82px; height: 52px; object-fit: cover;">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIdiwh0FFjut281i_IagExXrc1f28pmRbI7g&s"
-                                    alt="" style="width: 370px; height: 233px; object-fit: cover;" />
-                            </li>
+    <div class="container">
+        <div class="row content">
+            <div class="col-md-9 shop-section">
+                <div class="row">
+                    <div class="col-md-12 latest">
+                        <h4 class="pull-left">latest first</h4>
+                        <ul class="pagination-list pull-right">
+                            <li><a class="active" href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
                         </ul>
-                    </div>
-                    <div class="product-details col-md-6">
-                        <h1>Áo Hoodie</h1>
-                        <p class="price">
-                            $23.00
-                        </p>
-                        <span>$27.00</span>
-                        <p>
-                            Áo Hoodie Cao Cấp - Sự Kết Hợp Giữa Phong Cách & Sự Thoải Mái
-                        </p>
-                        <form action="#">
-                            <div class="qtyminus">
-                            </div>
-                            <input type="text" name="quantity" value="1" class="qty">
-                            <div class="qtyplus">
-                            </div>
-                        </form>
-                        <a href="#">Add to Cart</a>
-                        <hr>
-                        <div class="availability">
-                            <p>
-                                khả dụng:
-                            </p>
-                            <span>trong kho</span>
-                        </div>
-                        <div class="reviews">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                                <li><a href="#"><i class="fa fa-star-o"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Single Product -->
-                </div>
-                <div class="col-md-12 tabs">
-                    <div class="bs-example">
-                        <div class="tabbable">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a data-toggle="tab" href="#tab1"
-                                        data-loading-text="Loading...">Section 1</a></li>
-                                <li><a data-toggle="tab" href="#tab2" data-loading-text="Loading...">Section 2</a></li>
-                                <li><a data-toggle="tab" href="#tab3" data-loading-text="Loading...">Section 3</a></li>
-                            </ul>
-                            <div class="tab-content">
-                                <div id="tab1" class="tab-pane active fade in">
-                                    <p>
-                                        Hoodie không chỉ là trang phục giữ ấm mà còn là biểu tượng của sự năng động, trẻ
-                                        trung và cá tính. Với chất liệu cao cấp, thiết kế hiện đại, hoodie trở thành
-                                        item thời trang linh hoạt, phù hợp cho mọi mùa.
-                                    </p>
-                                </div>
-                                <div id="tab2" class="tab-pane fade">
-                                    <p>
-                                        Hoodie không chỉ mang lại sự ấm áp mà còn thể hiện phong cách năng động, trẻ
-                                        trung. Với chất liệu cao cấp và thiết kế hiện đại, đây là item thời trang đa
-                                        năng, dễ dàng phối đồ và phù hợp cho mọi thời tiết.
-                                    </p>
-                                </div>
-                                <div id="tab3" class="tab-pane fade">
-                                    <p>
-                                        Hoodie là biểu tượng của sự thoải mái và phong cách, kết hợp giữa vẻ năng động,
-                                        trẻ trung và tính ứng dụng cao. Nhờ chất liệu cao cấp và thiết kế linh hoạt,
-                                        hoodie có thể diện quanh năm mà vẫn luôn thời thượng.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <!--articles-->
                 <div class="row articles">
-                    <div class="col-md-4">
-                        <img src="https://thomasnguyentailor.com/wp-content/uploads/2022/07/ao-so-mi-ngan-tay-mau-xanh-thomas-nguyen-1.png"
-                            alt="">
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://down-vn.img.susercontent.com/file/vn-11134208-7r98o-lzk17mt4w0ip61" alt=""
+                            style="width: 257px; height: 270px; object-fit: cover; ">
                         <div class="text">
                             <a href="#"><span>
-                                    Áo sơ mi Classic Tailored </span></a>
+                                    Quần tây Wool Blend Tailored Fit </span></a>
                             <p>
-                                1.890.000 VNĐ
+                                2.490.000 VNĐ
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lochlsy5xu4765" alt="">
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://product.hstatic.net/200000935905/product/76_924b14ed28fb45c1888031c469b11054_master.png"
+                            alt="" style="width: 257px; height: 270px; object-fit: cover; ">
                         <div class="text">
                             <a href="#"><span>
-                                    Áo thun Organic Cotton Premium </span></a>
+                                    Quần jeans selvedge denim </span></a>
                             <p>
-                                1.290.000 VNĐ
+                                3.290.000 VNĐ
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <img src="https://www.gento.vn/wp-content/uploads/2023/09/giay-loafer-nam-da-lon-handmade-Gento-GD9216.jpg"
-                            alt="">
+                    <div class="col-md-4 col-sm-6">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="" style="width: 257px; height: 270px; object-fit: cover; ">
                         <div class="text">
                             <a href="#"><span>
-                                    Giày Loafer da lộn Handmade </span></a>
+                                    Mũ len Cashmere Hàn Quốc </span></a>
                             <p>
-                                5.690.000 VNĐ
+                                1.190.000 VNĐ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row articles">
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://www.gento.vn/wp-content/uploads/2021/04/tui-deo-cheo-nam-cao-cap-G1774.jpg"
+                            alt="" style="width: 257px; height: 270px; object-fit: cover; ">
+                        <div class="text">
+                            <a href="#"><span>
+                                    Túi đeo chéo Leather Minimalist </span></a>
+                            <p>
+                                3.490.000 VNĐ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-ll93zfk7iec48c" alt=""
+                            style="width: 257px; height: 270px; object-fit: cover; ">
+                        <div class="text">
+                            <a href="#"><span>
+                                    Giày lười da bò Handmade </span></a>
+                            <p>
+                                4.990.000 VNĐ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://gresso.com/cdn/shop/files/IMG_F46862D32918-1_1280x.jpg?v=1642436042" alt=""
+                            style="width: 257px; height: 270px; object-fit: cover; ">
+                        <div class="text">
+                            <a href="#"><span>
+                                    Kính râm Titanium Ultra-Light</span></a>
+                            <p>
+                                3.290.000 VNĐ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row articles">
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://product.hstatic.net/200000588671/product/ao-so-mi-nam-tay-dai-cong-so-bamboo-mau-trang-1_f8b1d53eebc94b8cbfe35d9e560cf9f5_master.jpg"
+                            alt="" style="width: 257px; height: 270px; object-fit: cover; ">
+                        <div class="text">
+                            <a href="#"><span>
+                                    Áo sơ mi Bamboo Airflow </span></a>
+                            <p>
+                                1.690.000 VNĐ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://product.hstatic.net/200000642007/product/43cal_3awsm0541_1_118da9d44f3e448a84d1b2194fe8bf9c_master.jpg"
+                            alt="" style="width: 257px; height: 270px; object-fit: cover; ">
+                        <div class="text">
+                            <a href="#"><span>
+                                    Áo sơ mi vải gấm Jacquard </span></a>
+                            <p>
+                                2.490.000 VNĐ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREKV19kVRrUhTEDzvBf2XVF7ti3iUXtDMF5A&s"
+                            alt="" style="width: 257px; height: 270px; object-fit: cover; ">
+                        <div class="text">
+                            <a href="#"><span>
+                                    Túi xách da cá sấu Handmade </span></a>
+                            <p>
+                                9.290.000 VNĐ
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--end-articles-->
             <div class="col-md-3 shop-sidebar">
                 <div class="sidebar-widgets">
+                    <div class="shop-widget">
+                        <h4>Price selector</h4>
+                        <div class="price-range">
+                            <!-- div to become a slider -->
+                            <div class="noUiSlider">
+                            </div>
+                            <input type="text" id="start-val" />
+                            <input type="text" id="end-val" />
+                        </div>
+                    </div>
                     <div class="shop-widget">
                         <h4>Categories</h4>
                         <ul class="category-shop-list">
@@ -412,20 +409,6 @@
         </div>
     </div>
     <!--end-footer-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
-    <script defer src="js/jquery.flexslider.js"></script>
-    <script type="text/javascript">
-        $(window).load(function () {
-            $('.flexslider').flexslider({
-                animation: "slide",
-                controlNav: "thumbnails",
-                start: function (slider) {
-                    $('body').removeClass('loading');
-                }
-            });
-        });
-    </script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
